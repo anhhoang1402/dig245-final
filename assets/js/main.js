@@ -87,7 +87,7 @@ const addHeadline = (ev) => {
         document.querySelector('#good').innerHTML = ("Your headline receives excellent engagement score");
       }
 
-      else if (score <= 50) {
+      else if (score >= 50 ) {
         document.querySelector('#good').innerHTML = ("Your headline receives above average engagement score");
       } else {
         document.querySelector('#good').innerHTML = ("Your headline receives low engagement score");
