@@ -83,6 +83,16 @@ const addHeadline = (ev) => {
       $(".openner").hide();
       $(".slidecontainer").hide();
 
+      if (score >= 90) {
+        document.querySelector('#good').innerHTML = ("Your headline receives excellent engagement score");
+      }
+
+      else if (score <= 50) {
+        document.querySelector('#good').innerHTML = ("Your headline receives above average engagement score");
+      } else {
+        document.querySelector('#good').innerHTML = ("Your headline receives low engagement score");
+      }
+
 
 
 
